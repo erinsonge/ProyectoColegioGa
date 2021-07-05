@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Menu</title>
+</head>
+<body>
+    
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="./RegistrarAlumno.html" class="nav-link px-2 text-white">Registrar Alumno</a></li>
+              <li><a href="./RegistrarCurso.html" class="nav-link px-2 text-white">Registrar Curso</a></li>
+              <li><a href="./AsignarEstudiante.html" class="nav-link px-2 text-white">Asignacion</a></li>
+              <li><a href="./califica.html" class="nav-link px-2 text-white">Calificar</a></li>
+              <li><a href="./ListarNotas.html" class="nav-link px-2 text-white">Notas</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <form method="POST" action="../PHP/savePersona.php" enctype="multipart/form-data">
+                <div class="form-group">
+                    <h1>Registrar Alumnos</h1>
+                </div>
+                <div class="form-group">
+                    <label>DNI: </label><br>
+                    <input type="number" name="txtdni" id="" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Nombre</label><br>
+                    <input type="text" name="txtnombre" id="" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Apellido paterno:</label><br>
+                    <input type="text" name="txtApellPat" id="" class="form-control" rows="3">
+                </div>
+                <div class="form-group">
+                    <label>Apellido Materno:</label><br>
+                    <input type="text" name="txtApellMat" id="" class="form-control" step="0.1" min="5000" max="500000">
+                </div>
+                <div class="form-group">
+                    <label>Fecha de Nacimiento:</label><br>
+                    <input type="datetime" name="txtFechaNac" id="" class="form-control" min="1" max="10">
+                </div>
+                <div class="form-group">
+                    <label>Telefono:</label><br>
+                    <input type="number" name="txtTelefono" id="" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Correo:</label><br>
+                    <input type="email" name="txtEmail" id="" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Direccion:</label><br>
+                    <input type="text" name="txtDireccion" id="" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="btnSave" value="Nuevo" class="btn btn-outline-success" />
+                    <input type="reset" value="Borrar" class="btn btn-outline-danger">
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
